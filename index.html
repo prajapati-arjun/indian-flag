@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Independence Day - 15 August 2022 </title>
+    <style>
+        html {
+            font-size: 62.5%;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #ffff;
+        }
+
+        .heading {
+            width: 10rem;
+            height: 10rem;
+            margin:  1rem auto;
+            padding: 1rem;
+            font-size: 4rem;
+            text-align: center;
+        }
+
+        .first {
+            color: #FF9933;
+        }
+
+        .middle {
+            color: #ffff;
+        }
+
+        .second {
+            color: #138808;
+        }
+
+        .flag {
+          
+            margin: auto;
+            width: 40rem;
+            height: 60rem;
+            border-left: 1rem solid brown;
+        }
+
+        #top {
+            background-color: #FF9933;
+            height: 10rem;
+            width: 40rem;
+        }
+
+        #middle {
+            background-color: #ffff;
+            height: 9.6rem;
+            width: 9.6rem;
+            border: .2rem solid #000080;
+            border-radius: 50%;
+            margin: .2rem auto;
+            animation: roundround 10s infinite linear;
+
+
+        }
+
+        @keyframes roundround {
+            from {
+                transform: rotate(0deg)
+            }
+
+            to {
+                transform: rotate(360deg)
+            }
+
+        }
+
+        #middle li {
+            list-style-type: none;
+            width: 9.4rem;
+            border: .1rem solid #000080;
+            position: relative;
+            background-color: #000080;
+        }
+
+        li:nth-child(1) {
+            top: 4.7rem;
+            transform: rotate(0deg);
+        }
+
+        li:nth-child(2) {
+            top: 4.5rem;
+            transform: rotate(15deg);
+        }
+
+        li:nth-child(3) {
+            top: 4.3rem;
+            transform: rotate(30deg);
+        }
+
+        li:nth-child(4) {
+            top: 4.1rem;
+            transform: rotate(45deg);
+        }
+
+        li:nth-child(5) {
+            top: 3.9rem;
+            transform: rotate(60deg);
+        }
+
+        li:nth-child(6) {
+            top: 3.7rem;
+            transform: rotate(75deg);
+        }
+
+        li:nth-child(7) {
+            top: 3.5rem;
+            transform: rotate(90deg);
+        }
+
+        li:nth-child(8) {
+            top: 3.3rem;
+            transform: rotate(105deg);
+        }
+
+        li:nth-child(9) {
+            top: 3.1rem;
+            transform: rotate(120deg);
+        }
+
+        li:nth-child(10) {
+            top: 2.9rem;
+            transform: rotate(135deg);
+        }
+
+        li:nth-child(11) {
+            top: 2.7rem;
+            transform: rotate(150deg);
+        }
+
+        li:nth-child(12) {
+            top: 2.5rem;
+            transform: rotate(165deg);
+        }
+
+
+        #bottom {
+            background-color: #138808;
+            height: 10rem;
+            width: 40rem;
+        }
+
+        @media(max-width:998px) {
+            html{
+                font-size:55%;
+            }
+        }
+        @media(max-width:768px) {
+            html{
+                font-size:45%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <audio id="autoplay" controls hidden loop>
+
+        <source src="./VANDEMATARAM___Instrumental___Indian_National_Song.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <div class="heading">
+
+        <span class="first">जय</span>
+        <span class="second">हिन्द</span>
+
+    </div>
+    <div class="flag">
+        <div id="top">
+
+        </div>
+        <div id="middle">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </div>
+        <div id="bottom">
+
+        </div>
+
+    </div>
+    <script>
+        window.onload = function () {
+            document.getElementById("autoplay").play();
+        }
+    </script>
+</body>
+
+</html>
